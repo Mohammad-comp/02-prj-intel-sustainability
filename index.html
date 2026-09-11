@@ -8,136 +8,158 @@
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
-  <header>
-    <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
-
-      <!-- Subheading / Description -->
-      <p>
+  <!-- Hero section introduces the timeline. -->
+  <header class="hero">
+    <div class="hero__content">
+      <img class="hero__logo" src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <p class="hero__eyebrow">Innovation with purpose</p>
+      <h1>Sustainability Through the Ages</h1>
+      <p class="hero__description">
         Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
+        to innovation has shaped a more sustainable future for technology
         and our planet.
       </p>
     </div>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section>
+  <main>
+  <section class="timeline-section" aria-labelledby="timeline-title">
+    <div class="section-heading">
+      <p class="section-heading__label">Our progress</p>
+      <h2 id="timeline-title">Milestones that move us forward</h2>
+      <p class="timeline-instructions"><span class="desktop-instruction">Scroll sideways to explore the timeline.</span><span class="mobile-instruction">Scroll down to explore the timeline.</span></p>
+    </div>
+    <!-- Flexbox keeps the desktop timeline in one scrollable row. -->
+    <div class="timeline" aria-label="Intel sustainability milestones">
 
     <!-- Card 1: 1968 -->
-    <div>
-      <h2>1968</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image milestone-card__image--logo" src="img/1.svg" alt="Intel logo" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">1968</p>
       <h3>Intel Founded</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
         decades of technological innovation.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 2: 1971 -->
-    <div>
-      <h2>1971</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/1.png" alt="Conceptual illustration of the Intel 4004 microprocessor" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">1971</p>
       <h3>First Microprocessor</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
         of computing devices.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 3: 1978 -->
-    <div>
-      <h2>1978</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/3.png" alt="Conceptual illustration of Intel's 8086 processor launch in 1978" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">1978</p>
       <h3>8086 Processor</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 4: 1985 -->
-    <div>
-      <h2>1985</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/4.png" alt="Conceptual illustration of Intel's 386 processor in 1985" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">1985</p>
       <h3>386 Processor</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
         personal computers.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 5: 2006 -->
-    <div>
-      <h2>2006</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/5.png" alt="Conceptual illustration of Intel's peak greenhouse gas emissions in 2006" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">2006</p>
       <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
         chemical abatement, renewable energy, and energy-efficient 
         manufacturing to reverse this trend.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 6: 2020 -->
-    <div>
-      <h2>2020</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/6.png" alt="Conceptual illustration of Intel's RISE sustainability strategy in 2020" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">2020</p>
       <h3>RISE Strategy</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
         progress on climate action, water stewardship, and waste reduction.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 7: 2022 -->
-    <div>
-      <h2>2022</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/7.png" alt="Conceptual illustration of Intel's net-zero 2040 commitment announced in 2022" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">2022</p>
       <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
         by 2040, building on years of environmental initiatives.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 8: 2023 -->
-    <div>
-      <h2>2023</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/8.png" alt="Conceptual illustration of Intel's 99 percent renewable electricity milestone in 2023" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">2023</p>
       <h3>Renewable Electricity</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
         toward Intel's long-term sustainability goals.
       </p>
-    </div>
+      </div>
+    </article>
 
     <!-- Card 9: 2024 -->
-    <div>
-      <h2>2024</h2>
+    <article class="milestone-card" tabindex="0">
+      <img class="milestone-card__image" src="img/9.png" alt="Conceptual illustration of Intel's first Sustainability Summit in 2024" loading="lazy" />
+      <div class="milestone-card__content">
+      <p class="milestone-card__year">2024</p>
       <h3>Sustainability Summit</h3>
-      <!-- Add image -->
-      <p>
+      <p class="milestone-card__description">
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
         next-generation sustainable semiconductor manufacturing.
       </p>
+      </div>
+    </article>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  </main>
+  <footer class="site-footer"><p>Images are AI-generated conceptual illustrations created for this timeline.</p></footer>
 </body>
 </html>
